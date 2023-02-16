@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Printing size of type of compuer C is compiled on
- * Return: 0 (Program successful)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
