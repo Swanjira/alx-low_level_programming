@@ -2,23 +2,20 @@
 #include "main.h"
 
 /**
- * main - program that prints all arguments
- * @argc: counts no. of arguments
- * @argv: arguments
+ * main - prints all numbers it receives
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: 0 on success
  */
 
 int main(int argc, char *argv[])
 {
-	int count = 0;
+	int a;
 
-	if (argc > 0)
+	for (a = 0; a < argc; a++)
 	{
-		while (count < argc)
-		{
-			printf("%s\n", argv[count]);
-		}
+		printf("%s\n", argv[a]);
 	}
 	return (0);
 }
