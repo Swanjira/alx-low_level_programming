@@ -22,9 +22,8 @@ int check_num(char *str)
 		{
 			return (0);
 		}
-
-	}
 	count++;
+	}
 	return (1);
 }
 
