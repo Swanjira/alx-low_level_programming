@@ -3,7 +3,7 @@
 
 /**
  * str_concat - concatenates two strings
- * @s1: input
+ * @s1: imput
  * @s2: input
  *
  * Return: concatenation of s1 and s2 if successful
@@ -14,12 +14,12 @@ char *str_concat(char *s1, char *s2)
 {
 	char *conct;
 
-	int x = 0, y = 0;
+	int x, y;
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = '''';
 	if (s2 == NULL)
-		s2 = "";
+		s2 = '''';
 	x = y = 0;
 	while (s1[x] != '\0')
 		x++;
@@ -33,6 +33,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		conct[x] = s1[x];
 		x++;
+	}
+	while (s2[y] != '\0')
+	{
+		conct[x] = s2[y];
 	}
 	while (s2[y] != '\0')
 	{
